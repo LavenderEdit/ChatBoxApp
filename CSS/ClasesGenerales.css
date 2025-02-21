@@ -1,3 +1,4 @@
+/* Estilo global para no permitir se copie un elemento de la pagina web */
 .sin-copiar {
     -webkit-user-select: none;
     -moz-user-select: none;
@@ -5,6 +6,7 @@
     user-select: none;
 }
 
+/* Estilos globales del estilo de peso de una letra */
 .negrita-media {
     font-weight: 600;
 }
@@ -21,6 +23,7 @@
     font-weight: bolder;
 }
 
+/* Estilos globales para activar mediante js */
 .escondido {
     display: none;
 }
@@ -33,6 +36,7 @@
     display: flex;
 }
 
+/* Estilos globales de los botones - en consideración del tamaño */
 .btn-size-small {
     padding: 6px 12px;
     font-size: 12px;
@@ -57,3 +61,58 @@
     padding: 22px 44px;
     font-size: 15px;
 }
+
+/* Estilos globales para ajustar el lugar en el que se alineara el texto */
+.justified-adjustment {
+    text-align: justify;
+}
+
+.left-adjustment {
+    text-align: left;
+    align-items: flex-start;
+    align-self: flex-start;
+    align-content: flex-start;
+    justify-content: flex-start;
+}
+
+.right-adjustment {
+    text-align: right;
+    align-items: flex-end;
+    align-self: flex-end;
+    align-content: flex-end;
+    justify-content: flex-end;
+}
+
+/* Estilos para el tamaño de la fuente de letras */
+.font-small {
+    font-size: 11px;
+}
+
+.font-small-medium {
+    font-size: 16px;
+}
+
+.font-medium {
+    font-size: 21px;
+}
+
+.font-medium-large {
+    font-size: 26px;
+}
+
+.font-large {
+    font-size: 31px;
+}
+
+.font-extra-large {
+    font-size: 37px;
+}
+
+.font-extra-extra-large {
+    font-size: 42px;
+}
+
+.font-triple-extra-large {
+    font-size: 61px;
+}
+
