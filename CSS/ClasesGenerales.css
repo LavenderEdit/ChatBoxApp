@@ -1,0 +1,59 @@
+.sin-copiar {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.negrita-media {
+    font-weight: 600;
+}
+
+.negrita-media-extrema {
+    font-weight: 900;
+}
+
+.negrita-extrema {
+    font-weight: bold;
+}
+
+.negrita-extrema-extrema {
+    font-weight: bolder;
+}
+
+.escondido {
+    display: none;
+}
+
+.activo {
+    display: block;
+}
+
+.activo-overlay {
+    display: flex;
+}
+
+.btn-size-small {
+    padding: 6px 12px;
+    font-size: 12px;
+}
+
+.btn-size-medium {
+    padding: 10px 20px;
+    font-size: 14px;
+}
+
+.btn-size-large {
+    padding: 14px 28px;
+    font-size: 14px;
+}
+
+.btn-size-extra-large {
+    padding: 18px 36px;
+    font-size: 14px;
+}
+
+.btn-size-extra-extra-large {
+    padding: 22px 44px;
+    font-size: 15px;
+}
