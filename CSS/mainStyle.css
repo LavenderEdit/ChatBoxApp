@@ -121,7 +121,7 @@
     border: 2px solid #FFFFFF;
     background-color: transparent;
     color: #FFFFFF;
-    transition: all 0,3s ease;
+    transition: all 0, 3s ease;
 }
 
 #btn-hero-1:hover {
@@ -136,11 +136,7 @@
 
 #icon-apple-store {
     filter: invert(26%) sepia(100%) saturate(4000%) hue-rotate(190deg) brightness(100%) contrast(110%);
-    transition: all 0.05s ease-in-out;
-}
-
-#icon-play-store {
-    transition: all 0.05s ease-in-out;
+    transition: all 0.02s ease-in-out;
 }
 
 .btn-special-type:hover #icon-play-store {
@@ -150,3 +146,56 @@
 .btn-special-type:hover #icon-apple-store {
     filter: none;
 }
+
+/* Segunda Sección Elementos */
+
+/* Imagen del chat */
+.hero-chat-image {
+    max-width: 80%;
+    height: auto;
+    position: absolute;
+    bottom: -600px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+    filter: drop-shadow(0px 0px 15px gray);
+    border-radius: 20px;
+}
+
+/* Contenedor de logos */
+.logo-visual-container {
+    width: 100%;
+    margin-top: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 150px;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 5;
+}
+
+/* Logos */
+.logo-visual-container img {
+    width: auto;
+    max-width: 150px;
+    object-fit: contain;
+    opacity: 0.2;
+}
+
+#StripeLogo, #HopinLogo {
+    height: 35px;
+}
+
+#SplunkLogo  {
+    height: 25px;
+}
+
+#AfterpayLogo {
+    height: 65px;
+}
+
+#AttentiveLogo {
+    height: 50px;
+}
+

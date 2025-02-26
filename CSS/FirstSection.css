@@ -1,12 +1,13 @@
 .section {
     width: 100%;
-    height: auto;
+    height: 850px;
 }
 
 #first-section {
     background-color: #014DFE;
     position: relative;
     overflow: hidden;
+    border-bottom: 45px solid black;
 }
 
 #first-section::before {
