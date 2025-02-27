@@ -1,7 +1,43 @@
+.negroPuro {
+    color: black;
+}
+
+.blancoPuro {
+    color: white;
+}
+
 .verdePuro {
     color: green;
 }
 
 .grisPuro {
     color: gray;
+}
+
+.azulPuro {
+    color: #014DFE;
+}
+
+.azulBrillante{
+    background-color: #014DFE;
+    color: white;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.azulBrillante:hover {
+    background-color: white;
+    color: #014DFE;
+}
+
+.grisRaroBtn {
+    background-color: #F1F1F3;
+    color: #014DFE;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.grisRaroBtn:hover {
+    background-color: #014DFE;
+    color: #F1F1F3;
 }
