@@ -7,6 +7,10 @@
 }
 
 /* Estilos globales del estilo de peso de una letra */
+.negrita-baja {
+    font-weight: 100;
+}
+
 .negrita-media {
     font-weight: 600;
 }
@@ -83,6 +87,11 @@
     justify-content: flex-end;
 }
 
+/* Tamaño de Linea */
+.line-1-6 {
+    line-height: 1.6;
+}
+
 /* Estilos para el tamaño de la fuente de letras */
 .font-small {
     font-size: 11px;
@@ -90,6 +99,10 @@
 
 .font-small-medium {
     font-size: 16px;
+}
+
+.font-medium-twenty-mark {
+    font-size: 20px;
 }
 
 .font-medium {
