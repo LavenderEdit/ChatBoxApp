@@ -1,4 +1,4 @@
-/* Contenedor principal */
+/* Quinta sección */
 #fifth-section {
     display: flex;
     justify-content: space-between;
@@ -6,14 +6,12 @@
     padding: 50px 10%;
 }
 
-/* Título */
 .message-sub-section:first-child span {
     font-size: 53.8px;
     font-weight: 100;
     color: #000;
 }
 
-/* Botón */
 .message-sub-section:nth-child(3) {
     display: flex;
     justify-content: start;

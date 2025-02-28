@@ -1,0 +1,15 @@
+/* Ajustes para la imagen dentro del fondo */
+#sixth-section {
+    padding-top: 100px;
+}
+
+#sixth-section img {
+    display: block;
+    width: 95%;
+    max-width: 1300px;
+    margin-inline: auto;
+    position: relative;
+    z-index: 2;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}

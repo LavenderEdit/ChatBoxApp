@@ -1,4 +1,4 @@
-/* Estilos generales */
+/* Cuarta Sección */
 #fourth-section {
     display: flex;
     justify-content: space-between;
@@ -6,20 +6,17 @@
     padding: 50px 10%;
 }
 
-/* Estilo del título */
 .message-sub-section:first-child span {
     font-size: 44px;
     font-weight: 100;
     color: #000;
 }
 
-/* Contenedor de estadísticas */
 .message-sub-section:last-child {
     display: flex;
     gap: 55px;
 }
 
-/* Estilos de las estadísticas */
 .message-sub-div-section {
     display: flex;
     flex-direction: column;
