@@ -6,6 +6,16 @@
     user-select: none;
 }
 
+/* Delineado */
+.delinear {
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.delinear:hover {
+    text-decoration: underline;
+}
+
 /* Estilos globales del estilo de peso de una letra */
 .negrita-baja {
     font-weight: 100;
@@ -62,8 +72,8 @@
 }
 
 .btn-size-extra-extra-large {
-    padding: 22px 44px;
-    font-size: 15px;
+    padding: 20px 40px;
+    font-size: 14px;
 }
 
 /* Estilos globales para ajustar el lugar en el que se alineara el texto */

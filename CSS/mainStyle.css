@@ -52,6 +52,10 @@
     text-decoration: underline;
 }
 
+.list-element a {
+    color: #FFFFFF;
+}
+
 .btn-general-type {
     background-color: #FFFFFF;
     color: #014DFE;
