@@ -3,7 +3,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 50px 10%;
+    padding-block: 50px 110px;
+    padding-inline: 100px;
 }
 
 .message-sub-section:first-child span {
