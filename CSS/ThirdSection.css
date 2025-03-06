@@ -3,7 +3,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 80px 20px;
+    padding-block: 120px;
+    padding-inline: 20px;
+    margin-block: 500px 50px;
 }
 
 /* Sección de tarjetas */
