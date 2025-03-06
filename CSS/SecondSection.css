@@ -1,31 +1,30 @@
-/* Segunda Sección Elementos */
-/* Imagen del chat */
+/* Segunda sección con posición absoluta */
+.second-section {
+    position: absolute;
+    top: 350px;
+    left: 0;
+    width: 100%;
+    min-height: 500px;
+    text-align: center;
+    padding-block: 50px 25px;
+}
+
 .hero-chat-image {
     max-width: 80%;
     height: auto;
-    position: absolute;
-    bottom: -600px;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 10;
     filter: drop-shadow(0px 0px 15px gray);
     border-radius: 20px;
 }
 
-/* Contenedor de logos */
 .logo-visual-container {
     width: 100%;
-    margin-top: 400px;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 150px;
+    gap: 80px;
     flex-wrap: wrap;
-    position: relative;
-    z-index: 5;
 }
 
-/* Logos */
 .logo-visual-container img {
     width: auto;
     max-width: 150px;
@@ -33,19 +32,9 @@
     opacity: 0.2;
 }
 
-#StripeLogo, #HopinLogo {
-    height: 35px;
-}
-
-#SplunkLogo  {
-    height: 25px;
-}
-
-#AfterpayLogo {
-    height: 65px;
-}
-
-#AttentiveLogo {
-    height: 50px;
-}
-
+/* Tamaño de logos */
+#StripeLogo { height: 35px; }
+#HopinLogo { height: 35px; }
+#SplunkLogo { height: 25px; }
+#AfterpayLogo { height: 65px; }
+#AttentiveLogo { height: 50px; }
