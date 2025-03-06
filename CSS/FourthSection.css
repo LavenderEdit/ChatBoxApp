@@ -17,6 +17,10 @@
     color: #000;
 }
 
+.message-sub-section p {
+    text-align: justify;
+}
+
 .message-sub-section:last-child {
     display: flex;
     gap: 55px;
