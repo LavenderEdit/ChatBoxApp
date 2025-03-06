@@ -146,7 +146,7 @@
 
 /* Efecto del Fondo */
 .background-effect {
-    background-color: #014DFE;
+    background-color: #014DFE !important;
     position: relative;
     overflow: hidden;
 }
