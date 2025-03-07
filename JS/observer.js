@@ -16,7 +16,7 @@ export function observeThirdSection() {
       if (entry.isIntersecting) {
         if (!intervalId) {
           applyBackgroundEffect(cards);
-          intervalId = setInterval(() => applyBackgroundEffect(cards), 4000);
+          intervalId = setInterval(() => applyBackgroundEffect(cards), 2500);
         }
       } else {
         if (intervalId) {
@@ -28,4 +28,20 @@ export function observeThirdSection() {
   }, observerOptions);
 
   observer.observe(thirdSection);
+
+  cards.forEach(card => {
+    card.addEventListener('mouseenter', () => {
+      if (intervalId) {
+        clearInterval(intervalId);
+        intervalId = null;
+      }
+    });
+    card.addEventListener('mouseleave', () => {
+      const rect = thirdSection.getBoundingClientRect();
+      if (rect.top < window.innerHeight && rect.bottom > 0 && !intervalId) {
+        applyBackgroundEffect(cards);
+        intervalId = setInterval(() => applyBackgroundEffect(cards), 2500);
+      }
+    });
+  });
 }
