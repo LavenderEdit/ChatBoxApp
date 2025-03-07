@@ -9,6 +9,10 @@
 @import url('./SixthSection.css');
 @import url('./SeventhSection.css');
 
+body {
+    overflow-x: hidden;
+}
+
 .head-line {
     padding: 1rem 2rem;
 }
