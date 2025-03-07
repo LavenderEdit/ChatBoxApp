@@ -1,13 +1,22 @@
-export function applyBackgroundEffect(cards) {
-  cards.forEach((card, index) => {
-    setTimeout(() => {
-      card.classList.add("background-effect");
-      void card.offsetWidth;
+let currentCardIndex = 0;
 
-      setTimeout(() => {
-        card.classList.remove("background-effect");
-        void card.offsetWidth;
-      }, 1000);
-    }, index * 1200);
-  });
+export function applyBackgroundEffect(cards) {
+  if (Array.from(cards).some(card => card.matches(':hover'))) {
+    return;
+  }
+
+  if (document.querySelector('.cards.background-effect')) {
+    return;
+  }
+
+  const card = cards[currentCardIndex];
+  currentCardIndex = (currentCardIndex + 1) % cards.length;
+
+  card.classList.add("background-effect");
+  void card.offsetWidth;
+
+  setTimeout(() => {
+    card.classList.remove("background-effect");
+    void card.offsetWidth;
+  }, 1500);
 }
