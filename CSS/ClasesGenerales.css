@@ -76,6 +76,20 @@
     font-size: 14px;
 }
 
+/* Estilos globales para ajustar la posición del contenido de la página web */
+.z-index-dim {
+    z-index: 1;
+}
+
+.z-index-min {
+    z-index: 9;
+}
+
+.z-index-max {
+    position: relative;
+    z-index: 9999;
+}
+
 /* Estilos globales para ajustar el lugar en el que se alineara el texto */
 .justified-adjustment {
     text-align: justify;
