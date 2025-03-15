@@ -1,12 +1,11 @@
 /* Segunda sección con posición absoluta */
 .second-section {
     position: absolute;
-    top: 350px;
+    top: 400px;
     left: 0;
-    width: 100%;
-    min-height: 500px;
+    min-height: 400px;
     text-align: center;
-    padding-block: 50px 25px;
+    margin-top: 10px;
 }
 
 .hero-chat-image {
