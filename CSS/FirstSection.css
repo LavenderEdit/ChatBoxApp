@@ -15,7 +15,6 @@
     padding: 80px 20px;
     max-width: 1200px;
     margin: 0 auto;
-    z-index: 999;
 }
 
 .hero-section {
@@ -68,7 +67,7 @@
     border: 2px solid #FFFFFF;
     background-color: transparent;
     color: #FFFFFF;
-    transition: all 0, 3s ease;
+    transition: all 0.3s ease;
 }
 
 #btn-hero-1:hover {
@@ -88,8 +87,4 @@
 
 .btn-special-type:hover #icon-play-store {
     filter: invert(26%) sepia(100%) saturate(4000%) hue-rotate(190deg) brightness(100%) contrast(110%);
-}
-
-.btn-special-type:hover #icon-apple-store {
-    filter: none;
 }
