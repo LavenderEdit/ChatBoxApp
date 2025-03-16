@@ -46,6 +46,10 @@ Durante el desarrollo de ChatBoxApp, la parte más complicada fue la implementac
 
 Además, aprendí sobre la biblioteca `aos.js` y su uso para crear animaciones en la página de manera sencilla y eficiente.
 
+## Link de Ejecución
+
+[ChatBox](https://lavenderedit.github.io/ChatBoxApp/).
+
 ## Créditos
 
 Desarrollado por [LavenderEdit](https://github.com/LavenderEdit).
