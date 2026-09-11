@@ -1,22 +1,19 @@
 let currentCardIndex = 0;
 
 export function applyBackgroundEffect(cards) {
-  if (Array.from(cards).some(card => card.matches(':hover'))) {
-    return;
-  }
+  const cardList = Array.from(cards);
+  const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-  if (document.querySelector('.cards.background-effect')) {
-    return;
-  }
+  if (reduceMotion || cardList.length === 0) return;
+  if (cardList.some((card) => card.matches(':hover'))) return;
+  if (document.querySelector('.cards.background-effect')) return;
 
-  const card = cards[currentCardIndex];
-  currentCardIndex = (currentCardIndex + 1) % cards.length;
+  const card = cardList[currentCardIndex];
+  currentCardIndex = (currentCardIndex + 1) % cardList.length;
 
-  card.classList.add("background-effect");
-  void card.offsetWidth;
+  card.classList.add('background-effect');
 
-  setTimeout(() => {
-    card.classList.remove("background-effect");
-    void card.offsetWidth;
-  }, 1500);
+  window.setTimeout(() => {
+    card.classList.remove('background-effect');
+  }, 1400);
 }
