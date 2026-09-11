@@ -1,13 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
 
-/*Reajustador de Margenes*/
 html {
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
 
-*::after,
-*::before {
+*,
+*::before,
+*::after {
     box-sizing: inherit;
 }
 
@@ -17,4 +17,16 @@ html {
     text-decoration: none;
     list-style-type: none;
     font-family: 'Poppins', sans-serif;
+}
+
+img,
+svg {
+    max-width: 100%;
+}
+
+button,
+input,
+textarea,
+select {
+    font: inherit;
 }
