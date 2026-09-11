@@ -1,47 +1,44 @@
-import { applyBackgroundEffect } from "./background-apply.js";
+import { applyBackgroundEffect } from './background-apply.js';
 
 export function observeThirdSection() {
-  const cards = document.querySelectorAll(".cards");
-  const thirdSection = document.getElementById("third-section");
+  const cards = document.querySelectorAll('.cards');
+  const thirdSection = document.getElementById('third-section');
+  const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
   let intervalId = null;
+  let sectionIsVisible = false;
 
-  if (!thirdSection || cards.length === 0) return;
+  if (!thirdSection || cards.length === 0 || reduceMotion.matches) return;
 
-  const observerOptions = {
-    threshold: 0.5,
+  const stopCycle = () => {
+    if (intervalId) {
+      window.clearInterval(intervalId);
+      intervalId = null;
+    }
+  };
+
+  const startCycle = () => {
+    if (!sectionIsVisible || document.hidden || intervalId) return;
+    applyBackgroundEffect(cards);
+    intervalId = window.setInterval(() => applyBackgroundEffect(cards), 2500);
   };
 
   const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        if (!intervalId) {
-          applyBackgroundEffect(cards);
-          intervalId = setInterval(() => applyBackgroundEffect(cards), 2500);
-        }
-      } else {
-        if (intervalId) {
-          clearInterval(intervalId);
-          intervalId = null;
-        }
-      }
+      sectionIsVisible = entry.isIntersecting;
+      if (sectionIsVisible) startCycle();
+      else stopCycle();
     });
-  }, observerOptions);
+  }, { threshold: 0.35 });
 
   observer.observe(thirdSection);
 
-  cards.forEach(card => {
-    card.addEventListener('mouseenter', () => {
-      if (intervalId) {
-        clearInterval(intervalId);
-        intervalId = null;
-      }
-    });
-    card.addEventListener('mouseleave', () => {
-      const rect = thirdSection.getBoundingClientRect();
-      if (rect.top < window.innerHeight && rect.bottom > 0 && !intervalId) {
-        applyBackgroundEffect(cards);
-        intervalId = setInterval(() => applyBackgroundEffect(cards), 2500);
-      }
-    });
+  cards.forEach((card) => {
+    card.addEventListener('mouseenter', stopCycle);
+    card.addEventListener('mouseleave', startCycle);
+  });
+
+  document.addEventListener('visibilitychange', () => {
+    if (document.hidden) stopCycle();
+    else startCycle();
   });
 }
